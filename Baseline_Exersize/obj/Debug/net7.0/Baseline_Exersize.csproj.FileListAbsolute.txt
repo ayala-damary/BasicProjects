@@ -1,0 +1,14 @@
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.AssemblyInfo.cs
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\bin\Debug\net7.0\Baseline_Exersize.exe
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\bin\Debug\net7.0\Baseline_Exersize.deps.json
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\bin\Debug\net7.0\Baseline_Exersize.runtimeconfig.json
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\bin\Debug\net7.0\Baseline_Exersize.dll
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\bin\Debug\net7.0\Baseline_Exersize.pdb
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.dll
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\refint\Baseline_Exersize.dll
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.pdb
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\Baseline_Exersize.genruntimeconfig.cache
+C:\Users\user1\Desktop\Baseline_Exersize\Baseline_Exersize\obj\Debug\net7.0\ref\Baseline_Exersize.dll

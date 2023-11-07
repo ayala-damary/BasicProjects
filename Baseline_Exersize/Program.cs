@@ -173,6 +173,30 @@ public class Program
             n++;
         }
         }
+
+        //10
+     public static void IntegerValueOfRational()
+        { 
+         Console.Write("enter rational number");
+        string numberUser = Console.ReadLine();
+
+        if (double.TryParse(numberUser, out double number))
+        {
+            int sumDigit=0;
+       while(number)
+       {
+    sumDigit+=number%10;
+    number/=10;
+      }
+     Console.WriteLine("sum digit:"+sumDigit);
+        }
+        else
+        {
+            Console.WriteLine("valid input");
+        }
+
+        }
+
     public static void Main(string[] args)
     {
         //1

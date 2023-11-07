@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+
 namespace Baseline_Exersize;
 
 public class Program
@@ -58,11 +59,30 @@ public class Program
         THIRD,
         EXIT
     }
+
+    //6
+    public static void IntegerValueOfRational()
+        { 
+         Console.Write("enter rational number");
+        string rationalNumber = Console.ReadLine();
+
+        if (double.TryParse(rationalNumber, out double number))
+        {
+            int integerValue = (int)Math.Round(number, MidpointRounding.AwayFromZero);
+            Console.WriteLine("int value best soon" + integerValue);
+        }
+        else
+        {
+            Console.WriteLine("valid input");
+        }
+
+        }
     public static void Main(string[] args)
     {
+        //1
         int primeNumber = 0;
-         for(int y = 2 ; y < 14 ; y ++) {
-            if(IsPrimeNumber(y) && y >=1) {
+         for(int y = 2 ;y<14 ; y ++) {
+            if(IsPrimeNumber(y) ) {
                 primeNumber = y;
                 break;
             }

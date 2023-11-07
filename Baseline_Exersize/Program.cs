@@ -77,6 +77,25 @@ public class Program
         }
 
         }
+
+    //7
+        public static void IntegerValueOfRational2()
+      
+            {
+         Console.Write("enter rational number");
+        string rationalNumber = Console.ReadLine();
+
+        if (double.TryParse(rationalNumber, out double number))
+        {
+            int integerValue = (int)number;
+            Console.WriteLine("int value " + integerValue);
+        }
+        else
+        {
+            Console.WriteLine("invalid input");
+        }
+            }
+            
     public static void Main(string[] args)
     {
         //1

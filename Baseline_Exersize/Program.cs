@@ -1,4 +1,7 @@
-﻿namespace Baseline_Exersize;
+﻿
+using System;
+using System.Collections.Generic;
+namespace Baseline_Exersize;
 
 public class Program
 {
@@ -47,7 +50,14 @@ public class Program
         Console.Write(tav);
     }
  }
-    
+    //5
+        public enum Options
+    {
+        FIRST,
+        SECOND, 
+        THIRD,
+        EXIT
+    }
     public static void Main(string[] args)
     {
         int primeNumber = 0;
@@ -60,6 +70,33 @@ public class Program
         
         Console.WriteLine($"{primeNumber} is a prime number.");
         printRectangle(3,4);
+
+        //5
+            var options = new Dictionary<Options, string>(){
+    {Options.FIRST,"first" },
+    {Options.SECOND,"second" },
+    {Options.THIRD,"third"},
+    {Options.EXIT,"exit"}
+};
+         Console.WriteLine("enter options");
+            String strUser = Console.ReadLine().ToLower();
+            bool flagOpt = false;
+            foreach (var opt in options)
+            {
+                if (opt.Value == strUser)
+                {
+                    Console.WriteLine((Options)opt.Key);
+                    flagOpt = true;
+                }
+            }
+            if (strUser == "exit")
+            {
+                Console.WriteLine("exit from progam");
+            }
+            else if (flagOpt != true)
+            {
+                Console.WriteLine("invalid input");
+            }
     }
 
     static bool IsPrimeNumber(int number)
@@ -74,6 +111,9 @@ public class Program
 
             return true;
     }
+    
+
+    
 
 }
 

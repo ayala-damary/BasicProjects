@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Desktop\\Baseline_Exersize\\Baseline_Exersize\\Baseline_Exersize.csproj": {}
+    "C:\\Users\\user1\\Desktop\\project\\Baseline_Exersize\\BasicProjects\\Baseline_Exersize\\Baseline_Exersize.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Desktop\\Baseline_Exersize\\Baseline_Exersize\\Baseline_Exersize.csproj": {
+    "C:\\Users\\user1\\Desktop\\project\\Baseline_Exersize\\BasicProjects\\Baseline_Exersize\\Baseline_Exersize.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\Baseline_Exersize\\Baseline_Exersize\\Baseline_Exersize.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\project\\Baseline_Exersize\\BasicProjects\\Baseline_Exersize\\Baseline_Exersize.csproj",
         "projectName": "Baseline_Exersize",
-        "projectPath": "C:\\Users\\user1\\Desktop\\Baseline_Exersize\\Baseline_Exersize\\Baseline_Exersize.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\project\\Baseline_Exersize\\BasicProjects\\Baseline_Exersize\\Baseline_Exersize.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\Baseline_Exersize\\Baseline_Exersize\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\project\\Baseline_Exersize\\BasicProjects\\Baseline_Exersize\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

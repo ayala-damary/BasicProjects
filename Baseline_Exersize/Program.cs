@@ -95,7 +95,23 @@ public class Program
             Console.WriteLine("invalid input");
         }
             }
-            
+
+    //8
+        public static void printNumberPow2()
+        {
+             Console.WriteLine("enter number");
+        string numberUser = Console.ReadLine();
+
+        if (double.TryParse(numberUser, out double number))
+        {
+            double square = Math.Pow(number, 2);
+            Console.WriteLine("the number pow 2 " + square);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input");
+        }
+        }
     public static void Main(string[] args)
     {
         //1

@@ -220,6 +220,67 @@ namespace Baseline_Exersize
         }
         return num;
     }
+
+    //2.2
+   public static void Calculate()
+   {
+            Console.WriteLine("Insert first number:");
+        if (double.TryParse(Console.ReadLine(), out double num1))
+        {
+            Console.WriteLine("Insert operation (+, *, -, /):");
+            string operatorUser = Console.ReadLine();
+            
+            Console.WriteLine("Insert second number:");
+            if (double.TryParse(Console.ReadLine(), out double num2))
+            {
+                double result = 0;
+                switch (operatorUser)
+                {
+                    case "+":
+                        result = num1 + num2;
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        break;
+                    case "/":
+                        if (num2 != 0)
+                        {
+                            result = num1 / num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("eror there is not posible to divizon by zero.");
+                            return;
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("error opertor.");
+                        return;
+                }
+
+
+
+    static bool AreWordsSimilar(string word1, string word2)
+    {
+        if (word1.Length != word2.Length)
+        {
+            return false;
+        }
+
+        for (int i = 0; i < word1.Length; i++)
+        {
+            if (word1[i] != word2[i])
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
         public static void Main(string[] args)
         {
             //1
@@ -303,7 +364,51 @@ namespace Baseline_Exersize
 
             return true;
         }
+//2.2
+                Console.WriteLine("The Result: " + result);
+            }
+            else
+            {
+                Console.WriteLine("error second number.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("error first number.");
+        }
+    }
+}
 
+
+   }
+
+   //2.2
+   
+        Console.WriteLine("Enter two words separated by a comma (,):");
+        string input = Console.ReadLine();
+
+        if (input.Contains(","))
+        {
+            string[] words = input.Split(',');
+            
+            if (words.Length == 2)
+            {
+                string word1 = words[0].Trim().ToLower();
+                string word2 = words[1].Trim().ToLower();
+
+                bool areSimilar = AreWordsSimilar(word1, word2);
+                Console.WriteLine(areSimilar ? "True" : "False");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid input");
+        }
+   
     
     }
 }

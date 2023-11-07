@@ -112,6 +112,67 @@ public class Program
             Console.WriteLine("Invalid input");
         }
         }
+
+    //9
+            public static void PerfectNumbersWithFor()
+        {
+
+        for (int i = 6; i <= 1000000; i++)
+        {
+            int sum = 1;
+
+            for (int div = 2; div * div <= i; div++)
+            {
+                if (i % div == 0)
+                {
+                    if (div * div != i)
+                    {
+                        sum += div + i / div;
+                    }
+                    else
+                    {
+                        sum += div;
+                    }
+                }
+            }
+
+            if (sum == i)
+            {
+                Console.Write(i + ",");
+            }
+        }
+        }
+
+                    public static void PerfectNumbersWithWhile()
+        {
+            int n=1000000;
+ int sum = 1;
+            int div= 2;
+
+            while (div * div <= n)
+            {
+                if (n % div == 0)
+                {
+                    if (div * div != n)
+                    {
+                        sum += div + n / divisor;
+                    }
+                    else
+                    {
+                        sum += div;
+                    }
+                }
+                div++;
+            }
+
+            if (sum == n)
+            {
+                Console.Write(n + ",");
+            }
+
+            n++;
+        }
+        }
     public static void Main(string[] args)
     {
         //1

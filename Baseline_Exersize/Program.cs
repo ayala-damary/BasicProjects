@@ -345,9 +345,6 @@ namespace Baseline_Exersize
         {
             Console.WriteLine("Invalid Input");
         }
-
-
-
         }
 
 

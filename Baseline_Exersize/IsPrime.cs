@@ -6,7 +6,7 @@
 //     {
 //         int primeNumber = 0;
 //          for(int y = 2 ; y < 14 ; y ++) {
-//             if(IsPrimeNumber(y) && y >=1) {
+//             if(IsPrimeNumber(y) && y >1) {
 //                 primeNumber = y;
 //                 break;
 //             }

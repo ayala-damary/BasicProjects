@@ -205,82 +205,102 @@ namespace Baseline_Exersize
 
         }
 
-//1.2
-    static int CalculateDigital(int num)
-    {
-        while (num >= 10)
+        //1.2
+        static int CalculateDigital(int num)
         {
-            int sum = 0;
-            while (num > 0)
+            while (num >= 10)
             {
-                sum += num % 10;
-                num /= 10;
-            }
-            num = sum;
-        }
-        return num;
-    }
-
-    //2.2
-   public static void Calculate()
-   {
-            Console.WriteLine("Insert first number:");
-        if (double.TryParse(Console.ReadLine(), out double num1))
-        {
-            Console.WriteLine("Insert operation (+, *, -, /):");
-            string operatorUser = Console.ReadLine();
-            
-            Console.WriteLine("Insert second number:");
-            if (double.TryParse(Console.ReadLine(), out double num2))
-            {
-                double result = 0;
-                switch (operatorUser)
+                int sum = 0;
+                while (num > 0)
                 {
-                    case "+":
-                        result = num1 + num2;
-                        break;
-                    case "*":
-                        result = num1 * num2;
-                        break;
-                    case "-":
-                        result = num1 - num2;
-                        break;
-                    case "/":
-                        if (num2 != 0)
-                        {
-                            result = num1 / num2;
-                        }
-                        else
-                        {
-                            Console.WriteLine("eror there is not posible to divizon by zero.");
-                            return;
-                        }
-                        break;
-                    default:
-                        Console.WriteLine("error opertor.");
-                        return;
+                    sum += num % 10;
+                    num /= 10;
                 }
-
-
-
-    static bool AreWordsSimilar(string word1, string word2)
-    {
-        if (word1.Length != word2.Length)
-        {
-            return false;
+                num = sum;
+            }
+            return num;
         }
 
-        for (int i = 0; i < word1.Length; i++)
+        //2.2
+        public static void Calculate()
         {
-            if (word1[i] != word2[i])
+            Console.WriteLine("Insert first number:");
+            if (double.TryParse(Console.ReadLine(), out double num1))
             {
-                return false;
+                Console.WriteLine("Insert operation (+, *, -, /):");
+                string operatorUser = Console.ReadLine();
+
+                Console.WriteLine("Insert second number:");
+                if (double.TryParse(Console.ReadLine(), out double num2))
+                {
+                    double result = 0;
+                    switch (operatorUser)
+                    {
+                        case "+":
+                            result = num1 + num2;
+                            break;
+                        case "*":
+                            result = num1 * num2;
+                            break;
+                        case "-":
+                            result = num1 - num2;
+                            break;
+                        case "/":
+                            if (num2 != 0)
+                            {
+                                result = num1 / num2;
+                            }
+                            else
+                            {
+                                Console.WriteLine("eror there is not posible to divizon by zero.");
+                                return;
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("error opertor.");
+                            return;
+                    }
+
+                }
             }
         }
 
-        return true;
+        //4.2
+        public static void swapIntegers(ref int num1,ref int num2)
+        {
+num1=num1+num2;
+num2=num1-num2;
+num1=num1-num2;
+
+            
+        }
+
+                public static void swapIntegers2(ref int num1,ref int num2)
+        {
+num1=num1*num2;
+num2=num1/num2;
+num1=num1/num2;
+
+            
+        }
+
+        //5.2
+        public static void calcSumAvarageMaxfromArray(double[] array,ref double sum,ref double avaerage, ref double max)
+        {       
+             for (int i = 0; i < 5; i++)
+        {
+            sum += arr[i];
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
+        }
+
+        avaerage = sum / 5;
     }
 
+        }
+        
         public static void Main(string[] args)
         {
             //1
@@ -324,90 +344,92 @@ namespace Baseline_Exersize
                 Console.WriteLine("invalid input");
             }
 
-//1.2
-       Console.WriteLine("Insert a number:");
-        string numberUser = Console.ReadLine();
+            //1.2
+            Console.WriteLine("Insert a number:");
+            string numberUser = Console.ReadLine();
 
-        if (int.TryParse(numberUser, out int num))
-        {
-            if (num >= 0)
+            if (int.TryParse(numberUser, out int num))
             {
-               
-             int resultCalc = CalculateDigital(num);
-            Console.WriteLine("Output: " + resultCalc);
-            }
-            else
-            {
-          Console.WriteLine("Invalid number");
-            }
-        }
-        else
-        {
-            Console.WriteLine("Invalid Input");
-        }
-        }
-
-
-        //1
-        static bool IsPrimeNumber(int number)
-        {
-            for (int c = 2; c * c <= number; c++)
-            {
-                if (number % c == 0)
+                if (num >= 0)
                 {
-                    return false;
+
+                    int resultCalc = CalculateDigital(num);
+                    Console.WriteLine("Output: " + resultCalc);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid number");
                 }
             }
-
-            return true;
-        }
-//2.2
-                Console.WriteLine("The Result: " + result);
-            }
             else
             {
-                Console.WriteLine("error second number.");
+                Console.WriteLine("Invalid Input");
             }
-        }
-        else
-        {
-            Console.WriteLine("error first number.");
-        }
-    }
-}
 
 
-   }
 
-   //2.2
-   
-        Console.WriteLine("Enter two words separated by a comma (,):");
-        string input = Console.ReadLine();
-
-        if (input.Contains(","))
-        {
-            string[] words = input.Split(',');
-            
-            if (words.Length == 2)
+            //1
+            static bool IsPrimeNumber(int number)
             {
-                string word1 = words[0].Trim().ToLower();
-                string word2 = words[1].Trim().ToLower();
+                for (int c = 2; c * c <= number; c++)
+                {
+                    if (number % c == 0)
+                    {
+                        return false;
+                    }
+                }
 
-                bool areSimilar = AreWordsSimilar(word1, word2);
-                Console.WriteLine(areSimilar ? "True" : "False");
+                return true;
+            }
+
+            //3.2
+
+            Console.WriteLine("Enter two words separate by-,:");
+            string input = Console.ReadLine();
+
+            if (input.Contains(","))
+            {
+                string[] words = input.Split(',');
+
+                if (words.Length == 2)
+                {
+                    string word1 = words[0].Trim().ToLower();
+                    string word2 = words[1].Trim().ToLower();
+
+                    bool areSimilar = AreWordsSimilar(word1, word2);
+                    Console.WriteLine(areSimilar ? "True" : "False");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input");
+                }
             }
             else
             {
                 Console.WriteLine("Invalid input");
             }
+
+            //3.2
+            static bool AreWordsSimilar(string word1, string word2)
+            {
+                if (word1.Length != word2.Length)
+                {
+                    return false;
+                }
+
+                for (int i = 0; i < word1.Length; i++)
+                {
+                    if (!(word1[i].Contains(word2)))
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
         }
-        else
-        {
-            Console.WriteLine("Invalid input");
-        }
-   
-    
     }
 }
+
 
 

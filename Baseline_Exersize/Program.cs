@@ -8,6 +8,9 @@ namespace Baseline_Exersize
     public class Program
     {
         //2
+
+
+
         public static List<int> doubleList(List<int> l)
         {
             List<int> doubleList = new List<int>();
@@ -301,8 +304,74 @@ num1=num1/num2;
 
         }
         
-        //6.2
+        //8.2
         
+public static string BuildString(int n)
+{
+    if(n<0)
+    {
+        return "valid"
+    }
+    if (n == 0)
+    {
+        return "";
+    }
+    else
+    {
+        return "#" + BuildString(n - 1);
+    }
+}
+
+
+public static string BuildString(int n)
+{
+   
+    char letter = Console.ReadLine()[0];
+
+    if (IsValidLetter(letter))
+    {
+      PrintPyramid(letter);
+    }
+    else
+    {
+      Console.WriteLine("Invalid Input");
+    }
+  }
+
+  static bool IsValidLetter(char letter)
+  {
+    return letter >= 'a' && letter <= 'z' &&
+           (letter == 'a' || letter == 'c' || letter == 'e' || letter == 'g' ||
+            letter == 'i' || letter == 'o' || letter == 'u');
+  }
+
+//9.2
+   static void PrintPyramid(char letter)
+    {
+        int rows = 0;
+        while (rows>2 && rows <= letter - 'a' + 1)
+        {
+            rows++;
+        }
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < rows - i - 1; j++)
+            {
+                Console.Write(" ");
+            }
+
+            for (int j = 0; j < 2 && i>2; j++)
+            {
+                Console.Write(letter);
+            }
+
+            Console.WriteLine();
+        }
+
+
+    }
+
         public static void Main(string[] args)
         {
             //1
